@@ -1,0 +1,281 @@
+{
+  "summary": {
+    "name": "Lennox's Attendance @ Institution ",
+    "description": "This mapping software will map the institutions I have attended since kindergarten to the present, and eventually to the desired school I wish to attend after completing my current education."
+  },
+  "location": {
+    "address": "USA",
+    "geocode": "38.685509760012025,-101.76727196275858"
+  },
+  "nodes": [
+    {
+      "overview": {
+        "index": 1,
+        "name": "Fircrest Elementary",
+        "description": ""
+      },
+      "location": {
+        "address": "Vancouver, Washington",
+        "geocode": "45.65244828675087,-122.61767380197199"
+      },
+      "attributes": {
+        "destinationindex": "",
+        "category": "#K12",
+        "image": [
+          {
+            "URL": "https://www.columbian.com/wp-content/uploads/2017/10/1000631704-10-12-Newcomers_02.jpg"
+          }
+        ],
+        "sources": [
+          {
+            "URL": "https://stackoverflow.com/questions/962196/test-cases-for-each-link-in-a-website"
+          },
+          {
+            "URL": "https://stackoverflow.com/questions/962196/test-cases-for-each-link-in-a-website"
+          }
+        ]
+      },
+      "measures": {
+        "measures": [
+          {
+            "mtype": "length",
+            "mvalue": "6",
+            "munit": "years",
+            "startTime": "1157062420",
+            "endTime": "1370044820"
+          },
+          {
+            "mtype": "",
+            "mvalue": "",
+            "munit": ""
+          }
+        ]
+      },
+      "notes": {
+        "markdown": "This is a test for importer bugs",
+        "keyvals": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "overview": {
+        "index": 2,
+        "name": "Firgrove Elementary",
+        "description": ""
+      },
+      "location": {
+        "address": "Puyallup, Washington",
+        "geocode": "47.16824333850091,-122.29690743046017"
+      },
+      "attributes": {
+        "destinationindex": "1",
+        "category": "#K12",
+        "image": [
+          {
+            "URL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F443446%2Fpexels-photo-443446.jpeg%3Fcs%3Dsrgb%26dl%3Ddaylight-forest-glossy-443446.jpg%26fm%3Djpg&f=1&nofb=1&ipt=aa2d9443d470c17c32c146c81672d32a4d20519252e5f16d511f54b59dcfe5be&ipo=images"
+          }
+        ],
+        "sources": [
+          {
+            "URL": ""
+          }
+        ]
+      },
+      "measures": {
+        "measures": [
+          {
+            "mtype": "length",
+            "mvalue": "1",
+            "munit": "year",
+            "startTime": "1377993620",
+            "endTime": "1401580820"
+          }
+        ]
+      },
+      "notes": {
+        "markdown": "",
+        "keyvals": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "overview": {
+        "index": 3,
+        "name": "Ballou Jr High",
+        "description": ""
+      },
+      "location": {
+        "address": "Puyallup, Washington",
+        "geocode": "47.14863351130145,-122.29698220990889"
+      },
+      "attributes": {
+        "destinationindex": "2",
+        "category": "#K12",
+        "image": [],
+        "sources": [
+          {
+            "URL": "https://duckduckgo.com/?q=urls+with+a+%2B+in+them&t=newext&atb=v341-1&ia=news"
+          }
+        ]
+      },
+      "measures": {
+        "measures": [
+          {
+            "mtype": "length",
+            "mvalue": "3",
+            "munit": "years",
+            "startTime": "1409529620"
+          }
+        ]
+      },
+      "notes": {
+        "markdown": "https://www.theolympian.com/news/politics-government/tf5hgi/picture127983084/alternates/LANDSCAPE_1140/classroom",
+        "keyvals": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "overview": {
+        "index": 4,
+        "name": "Governor John R Rogers High School",
+        "description": ""
+      },
+      "location": {
+        "address": "Puyallup, Washington",
+        "geocode": "47.17477833929906,-122.28442113270118"
+      },
+      "attributes": {
+        "destinationindex": "3",
+        "category": "#K12",
+        "image": [
+          {
+            "URL": "https://classreport.org/usa/wa/puyallup/rhs/schoolpage.jpg"
+          }
+        ],
+        "sources": [
+          {
+            "URL": ""
+          }
+        ]
+      },
+      "measures": {
+        "measures": [
+          {
+            "mtype": "length",
+            "mvalue": "3",
+            "munit": "years",
+            "startTime": "1472688020",
+            "endTime": "1559347220"
+          }
+        ]
+      },
+      "notes": {
+        "markdown": "",
+        "keyvals": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "overview": {
+        "index": 5,
+        "name": "Green River College",
+        "description": ""
+      },
+      "location": {
+        "address": "Auburn, Washington",
+        "geocode": "47.327653995607115,-122.24743881889593"
+      },
+      "attributes": {
+        "destinationindex": "4",
+        "category": "#Undergrad",
+        "image": [],
+        "sources": [
+          {
+            "URL": "https://stackoverflow.com/questions/962196/test-cases-for-each-link-in-a-website"
+          }
+        ]
+      },
+      "measures": {
+        "measures": [
+          {
+            "mtype": "length",
+            "mvalue": "2.5",
+            "munit": "years",
+            "startTime": "1567296020",
+            "endTime": "1638316820"
+          }
+        ]
+      },
+      "notes": {
+        "markdown": "",
+        "keyvals": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "overview": {
+        "index": 6,
+        "name": "University Colorado Boulder",
+        "description": ""
+      },
+      "location": {
+        "address": "Boulder, Colorado",
+        "geocode": "39.95185892663005,-105.25850078331666"
+      },
+      "attributes": {
+        "destinationindex": "5",
+        "category": "#Undergrad",
+        "image": [
+          {
+            "URL": "https://i.ytimg.com/vi/yggtWRf6ZR8/maxresdefault.jpg"
+          }
+        ],
+        "sources": [
+          {
+            "URL": "https://duckduckgo.com/?t=ffab&q=url+with+a+%2B+in+it&atb=v341-1&ia=web"
+          }
+        ]
+      },
+      "measures": {
+        "measures": [
+          {
+            "mtype": "length",
+            "mvalue": "1.5",
+            "munit": "years",
+            "startTime": "1640995220",
+            "endTime": "1712160020"
+          }
+        ]
+      },
+      "notes": {
+        "markdown": "",
+        "keyvals": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ]
+      }
+    }
+  ]
+}

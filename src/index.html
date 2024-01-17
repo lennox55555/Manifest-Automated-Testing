@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="https://js.arcgis.com/4.27/esri/themes/light/main.css" />
+
+
+	<title>Manifest: Supply Chain Platform</title>
+	<meta property="og:title" content="Manifest: Supply Chain Platform">
+
+	<!-- build:process -->
+	<base href="<%= baseurl %>" />
+	<link rel="stylesheet" href="css/Manifest-main<%= minify %>.css" />
+	<!-- /build -->
+
+	<meta property="og:url" content="https://manifest.supplystudies.com/">
+	<link rel="canonical" href="https://manifest.supplystudies.com/">
+	<!-- build:section layout.header --><!-- /build -->
+
+</head>
+
+<body class="light">
+	<section id="manifestbar">
+	    <!-- build:section layout.launcher --><!-- /build -->
+	</section>
+	<section id="sidepanel">
+		<div id="manifestlist"></div>
+	</section>
+
+	<section class="vizmenu">
+		<nav class="vizmenu-entry">
+			<div id="viz-choice-label" class="vizmenu-label">Visualize</div>
+			<select name="viz-choice" id="viz-choices">
+				<option id="map-viz-choice" value="map">Map</option>
+				<option id="forcegraph-viz-choice" value="forcegraph">Graph</option>
+				<option id="flow-viz-choice" value="flow">Flow</option>
+				<option id="chord-viz-choice" value="chord">Chord</option>
+				<option id="listview-viz-choice" value="listview">List</option>
+				<option id="textview-viz-choice" value="textview">Raw</option>
+			</select>
+		</nav>
+		<nav class="vizmenu-entry">
+			<div id="measure-choice-label" class="vizmenu-label">Scale</div>
+			<select name="measure-choice" id="measure-choices"> <option value="none">None</option> </select>
+		</nav>
+		<div class="clear"></div>
+	</section>
+
+	<main class="view-wrapper">
+		<div id="vizwrap" class="vizwrap closed">
+			<svg id="vizshell" class="vizsvg" preserveAspectRatio="xMinYMin meet"> <rect x="0" y="0" width="100%" height="100%" fill="#21222c"></rect></svg>
+			<input id="viz-slider" class="slider" type="range" min="20" max="100" value="30" step="5" oninput="MI.Visualization.Update();" />
+		</div>
+
+		<div class="searchwidget">
+			<i class="fas fa-search"></i>
+			<input type="text" placeholder="Filter by..." id="searchbar" />
+			<i id="searchclear" class="fas fa-times-circle searchclear"></i>
+		</div>
+
+		<div id="mapmenu"><i class="fas fa-layer-group"></i></div>
+		<div id="fullscreen-menu"><i class="fas fa-expand"></i></div>
+		<div id="messages" class="closed"></div>
+		<div id="mapcapture"><i class="fas fa-camera"></i></div>
+
+
+		<div id="timeCapture"><i class="fas fa-stopwatch"></i></div>
+
+		<div id="timeSlider"></div>
+
+
+		<nav id="mapmenu-window" class="closed">
+			<h3>Map Baselayer</h3>
+			<ul id="basemap-chooser">
+				<li class="satellite"></li> <li class="terrain"></li> <li class="light"></li> <li class="google"></li>
+				<div id="basemap-preview" class="google"></div>
+				<div class="clear"></div>
+			</ul>
+			<div id="datalayers">
+				<h3>Data Layers</h3>
+				<label class="layercontainer">Shipping Lanes <input type="checkbox" value="shipping"> <span class="layercheckmark"></span> </label>
+				<label class="layercontainer">Marine Traffic <input type="checkbox" value="marine"> <span class="layercheckmark"></span> </label>
+				<label class="layercontainer">Rail Connections <input type="checkbox" value="rail"> <span class="layercheckmark"></span> </label>
+			</div>
+			<div id="supplycategories">
+				<h3>Supply Chain Manifests</h3>
+			</div>
+		</nav>
+		<div class="map" id="map"></div>
+		<div class="textview closed" id="textview"></div>
+		<div class="listview closed" id="listview">
+			<div id="datalist" class="dataviewer smapviewer">
+				<div id="datasort">
+					<div class="manifest col sort" data-sort='manifest'>Manifest</div>
+					<div class="index col sort" data-sort='index'>#</div>
+					<div class="name col sort" data-sort='name'>Name</div>
+					<div class="description col sort" data-sort='description'>Description</div>
+					<div class="placename col sort" data-sort='placename'>Address</div>
+					<div class="geocode col sort" data-sort='geocode'>Geocode</div>
+					<div class="categories col sort" data-sort='categories'>Category</div>
+					<div class="notes col sort" data-sort='notes'>Additional Notes</div>
+					<div class="clear"></div>
+				</div>
+				<input type="search" id="datasearch" class="search" placeholder="Search..."  />
+				<ul class=list id="manifestlistview"></ul>
+			    <ul class="pagination"></ul>
+			</div>
+		</div>
+	</main>
+
+	<section id="loader">
+		<h1 id="loadertitle">Manifest</h1>
+		<h2 id="loadermessage">Supply Chain Platform</h2>
+		<div id="loaderspinner" class="lds-spinner">
+			<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		</div>
+	</section>
+	<!-- build:section layout.footer --><!-- /build -->
+
+    <!-- build:process -->
+	<script src="js/Manifest-lib<%= minify %>.js"></script>
+	<script src="js/Manifest-main<%= minify %>.js"></script>
+    <!-- /build -->
+
+    <!-- build:remove -->
+	<script src="../src/lib/json/casper.json"></script>
+	<script src="../src/lib/js/test.js"></script>
+    <!-- /build -->
+
+	<script src="https://js.arcgis.com/4.27/"></script>
+	<script src="./src/lib/js/manifest-ui.js"></script>
+
+</body>
+</html>
