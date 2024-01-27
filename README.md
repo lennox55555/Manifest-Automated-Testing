@@ -1,7 +1,7 @@
-Step 1: Clone the Manifest-Automated-Testing Repository
+## Step 1: Clone the Manifest-Automated-Testing Repository
 
-   a. Open a terminal or command prompt.
-   b. Clone the Manifest-Automated-Testing repository using the following command:
+   #### a. Open a terminal or command prompt.
+   #### b. Clone the Manifest-Automated-Testing repository using the following command:
 
 ```sh
 git clone https://github.com/lennox55555/Manifest-Automated-Testing.git
