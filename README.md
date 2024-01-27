@@ -4,16 +4,16 @@
 
  - Open a terminal or command prompt.**
    
-   #### b. Clone the Manifest-Automated-Testing repository using the following command:
+ - Clone the Manifest-Automated-Testing repository using the following command:
 
 ```sh
 git clone https://github.com/lennox55555/Manifest-Automated-Testing.git
 ```
-   c. Navigate to the cloned directory:
+  - Navigate to the cloned directory:
 
 ### `Step 2: Install Cypress 13.6.0`
 
-   #### a. Inside the Manifest-Automated-Testing directory, install Cypress by running:
+   - Inside the Manifest-Automated-Testing directory, install Cypress by running:
 
 ```sh
 cd Manifest-Automated-Testing
@@ -21,15 +21,15 @@ cd Manifest-Automated-Testing
 
 ### `Step 3: Open and Run Cypress Tests`
 
-   #### a. Open Cypress using the following command:
+   - Open Cypress using the following command:
 
 ```sh
 npx cypress open
 ```
 
-   #### b. Cypress Test Runner will launch and display a list of e2e test files.
+   - Cypress Test Runner will launch and display a list of e2e test files.
 
-   #### c. Click on any test file to run the tests. Cypress will execute the tests in the selected file and display the results.
+   - Click on any test file to run the tests. Cypress will execute the tests in the selected file and display the results.
 
 
 ## API
