@@ -1,3 +1,5 @@
+# Instructions for Integrating Manifest-End2end-Testing into Manifest
+
 ## Step 1: Clone the Manifest-Automated-Testing Repository
 
    #### a. Open a terminal or command prompt.
@@ -8,7 +10,7 @@ git clone https://github.com/lennox55555/Manifest-Automated-Testing.git
 ```
    c. Navigate to the cloned directory:
 
-Installation with yarn
+## Step 2: Install Cypress 13.6.0
 
 ```sh
 cd Manifest-Automated-Testing
