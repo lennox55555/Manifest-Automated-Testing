@@ -2,7 +2,7 @@
 
 ### `Step 1: Clone the Manifest-Automated-Testing Repository`
 
- - Open a terminal or command prompt.**
+ - Open a terminal or command prompt.
    
  - Clone the Manifest-Automated-Testing repository using the following command:
 
