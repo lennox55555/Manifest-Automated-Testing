@@ -6,14 +6,13 @@ function presentDefaultContent(toggleElements = {}) {
     '#minfodetail': false,
     '#viz-choices': true,
     '#measure-choices': true,
-    //'#timeCapture': false,
-    '#mapcapture': true,
+    '#timeCapture': false,
+    //'#mapcapture': true,
     '#timeSlider': true,
     //'#viz-slider': true,
     '#searchbar': true,
     '#fullscreen-menu': true,
     '#mapmenu': true,
-    '#mapmenu-window': false,
   };
 
   const finalVisibility = { ...defaultVisibility, ...toggleElements };
@@ -27,8 +26,10 @@ function presentDefaultContent(toggleElements = {}) {
   });
 }
 
-describe('Map Layer Toggle Tests', () => {
-  it('should toggle map layers', () => {
+
+describe('Visualization Option Tests', () => {
+  it('An automated test to verify every end-to-end point functions correctly from the graph view.', () => {
+
     cy.visit('http://localhost/dist/');
     //https://manifest.supplystudies.com/
     //https://manifest.supplystudies.com/dev
@@ -51,6 +52,42 @@ describe('Map Layer Toggle Tests', () => {
 
     cy.get('#searchclear').click();
 
+    cy.get('#closemap-1029261216').click();
 
+    cy.get('#minfo-hamburger').click();
+
+    presentDefaultContent({ '#minfodetail': true });
+
+    cy.get('#load-samples').select('URL');
+
+    cy.get('#load-samples-input').type('https://lennox55555.github.io/test/testTemporalData.json');
+
+    cy.get('#load-samples-btn').click();
+
+    cy.get('#timeCapture').click();
+
+    cy.get('.esri-icon-play').click();
+
+    cy.wait(10000);
+    cy.get('button[aria-label="Play"]').should($btn => {
+      expect($btn).to.have.attr('aria-label', 'Play');
+    }).then(() => {
+      cy.get('.esri-icon-reverse').click();
+
+      cy.get('.esri-icon-reverse').click();
+
+      cy.get('.esri-icon-forward').click();
+
+      cy.get('.esri-icon-forward').click();
+
+      cy.get('.esri-icon-forward').click();
+
+      cy.get('#fullscreen-menu').click();
+      //presentDefaultContent({ '#minfodetail': true });
+
+      cy.get('#fullscreen-menu').click();
+
+      cy.get('#closemap-687910787').click()
+    });
   });
 });
